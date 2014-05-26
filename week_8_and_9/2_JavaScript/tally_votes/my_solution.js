@@ -38,6 +38,8 @@ var voteCount = {
   vicePresident: {},
   secretary: {},
   treasurer: {}
+
+  for (var i in votes){}
 }
 
 /* The name of each student receiving a vote for an office should become a property 
