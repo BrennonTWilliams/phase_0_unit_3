@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge by myself
 
 */
 
@@ -26,27 +26,48 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+function average (array){
 
+  var total = 0;
+  for(var i in array){
+    total += array[i];
+  }
+  avg = total/array.length;
+  return avg;
+}
 
+var gradebook = {
 
-
+  addScore: function(name, score){this[name].testScores.push(score);},
+  getAverage: function(name){ return average(this[name].testScores);},
+  Joseph: {testScores: scores[0]},
+  Susan: {testScores: scores[1]},
+  William: {testScores: scores[2]},
+  Elizabeth: {testScores: scores[3]}
+};
 
 // __________________________________________
 // Refactored Solution
 
-
-
-
-
+/*
+I'm not sure how to refactor this, its a pretty terse solution. I
+did some research and there are a bunch of ways to iterate through the 
+array for the average function, but none of them seemed to have any
+clear advantage over the way I did it.
+*/
 
 
 
 // __________________________________________
 // Reflect
 
-
-
-
+/*
+This problem took my a surprisingly long time, I'm a bit alarmed by how
+quickly I forgot the Javascript we learned a few weeks ago. I caught myself
+thinking in Ruby more than once for this assignment. Previously I've favored
+CoffeeScript over Javascript so my JVS experience is super limited. I plan on
+taking a couple hours this week to refresh.
+*/
 
 
 
