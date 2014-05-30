@@ -19,7 +19,7 @@ Suggestion: Pair with someone to complete this challenge. Two brains are better 
  - JavaScript Objects
  - JavaScript prototypes
  - Looping in Ruby and Javascript (comparisons)
- - HTML
+ **** HTML
  - CSS
  - GIT
  - SQL
